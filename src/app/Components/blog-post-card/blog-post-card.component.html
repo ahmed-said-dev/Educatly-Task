@@ -1,0 +1,33 @@
+<a [href]="post.url" class="card-link">
+    <div class="card">
+      <div>
+        <img
+          [src]="post.social_image"
+          alt="Article Image"
+          class="article-image"
+        />
+        <p class="category">{{ post.tag_list[0] }}</p>
+        <div class="details">
+          <h2>{{ post.title }}</h2>
+          <img
+            src="assets/icons/arrow-up-right.svg"
+            alt="arrow up right"
+            class="arrow"
+          />
+        </div>
+        <p class="description">{{ post.description }}</p>
+      </div>
+      <div class="person">
+        <img
+          [src]="post.user.profile_image"
+          alt="User image"
+          class="user-image"
+        />
+        <div>
+          <p class="user-name">{{ post.user.name }}</p>
+          <p class="date">{{ post.published_at | date : "dd MMM yyyy" }}</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  

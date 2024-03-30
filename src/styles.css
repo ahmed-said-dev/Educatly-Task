@@ -1,0 +1,18 @@
+:root {
+    --primary-background-color: #ffff;
+    --secondary-background-color: #f9f5ff;
+    --purple-text-color: #6941c6;
+    --dark-purple-text-color: #42307d;
+    --badge-color: #f3ebff;
+    --gray: #d0d5dd;
+    --dark-gray: #667085;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #F9F5FF;
+    font-family: "Inter", sans-serif;
+  }
+  

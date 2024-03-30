@@ -1,0 +1,20 @@
+  .load-more-btn:hover {
+    background-color: #4c4bf0;
+    transform: scale(1.2);
+    color: #FFFFFF;
+  }
+  
+  .load-more-btn{
+    height: 48px;
+    width: 150px;
+    background-color: #e0dae9;
+    color: var(--purple-text-color);
+    border-style: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+
+  }

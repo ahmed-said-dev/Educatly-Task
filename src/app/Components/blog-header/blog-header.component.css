@@ -1,0 +1,115 @@
+:host {
+  .container {
+    position: relative;
+  }
+  header {
+    background-color: var(--secondary-background-color);
+    height: 375px;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+    z-index: -1;
+  }
+  .badge {
+    background-color: var(--badge-color);
+    color: var(--purple-text-color);
+    padding: 4px 12px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 16px;
+    font-weight: 700;
+  }
+  h1 {
+    color: var(--dark-purple-text-color);
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0;
+  }
+  header p {
+    color: var(--purple-text-color);
+  }
+  .search {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  input {
+    padding: 12px 16px 12px 36px;
+    width: 320px;
+    border: 2px solid var(--gray);
+    border-radius: 8px;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: var(--dark-gray);
+      font-weight: 500;
+    }
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 10px;
+  }
+  .background {
+    width: 100%;
+    position: absolute;
+    top: 400px;
+    z-index: 0;
+  }
+  main,
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .posts {
+    padding: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 25px;
+    z-index: 1;
+  }
+  .retry {
+    box-shadow: 0px 10px 15px 0px var(--dark-gray);
+    z-index: 1;
+    background-color: var(--gray) !important;
+  }
+  .load-more-btn,
+  .retry {
+    height: 48px;
+    width: 150px;
+    background-color: var(--secondary-background-color);
+    color: var(--purple-text-color);
+    border-style: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 18px;
+  }
+  .empty {
+    position: absolute;
+  }
+
+  @media (max-width: 375px) {
+    input {
+      max-width: 250px;
+    }
+  }
+  @media (max-width: 768px) {
+    .posts {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0px;
+    }
+    .load-more-btn {
+      width: 85%;
+    }
+  }
+}

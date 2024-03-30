@@ -1,0 +1,254 @@
+.example-card {
+    max-width: 400px;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 0 120px;
+    justify-content: center;
+}
+
+.grid-item {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 20px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+}
+
+
+.center-pagination {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px;
+}
+
+.rotate-container {
+    width: 100%;
+
+}
+
+.rotate-container {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+
+    transform: rotate(-30deg);
+}
+
+.first-line,
+.sec-line,
+.third-line {
+
+    position: absolute;
+    width: 100%;
+    height: 55.46px;
+    left: 0;
+    top: 388px;
+    background: #D6BBFB;
+}
+
+.sec-line {
+    background: #E9D7FE;
+    top: 438px;
+}
+
+.third-line {
+    background: #F4EBFF;
+    top: 488px;
+}
+
+.all-content {
+    overflow: hidden;
+}
+
+.content-container {
+    position: relative;
+}
+
+.lines .line {
+    position: absolute;
+    height: 50px;
+    width: 35%;
+    transform-origin: bottom right;
+    right: 0;
+}
+
+.lines-reverse .line {
+    position: absolute;
+    height: 50px;
+    width: 25%;
+    transform-origin: bottom left;
+    left: 0;
+}
+
+.lines .line:nth-child(1) {
+    top: -7%;
+    background-color: #D6BBFB;
+    transform: rotate(-15deg);
+}
+
+.lines .line:nth-child(2) {
+    top: calc(-7% + 50px);
+    background-color: #E9D7FE;
+    transform: rotate(-15deg);
+}
+
+.lines .line:nth-child(3) {
+    top: calc(-7% + 100px);
+    background-color: #F4EBFF;
+    transform: rotate(-15deg);
+}
+
+
+
+.lines-reverse .line:nth-child(1) {
+    top: 0%;
+    transform: rotate(15deg);
+    background-color: #F4EBFF;
+}
+
+.lines-reverse .line:nth-child(2) {
+    top: calc(0% + 50px);
+    background-color: #E9D7FE;
+    transform: rotate(15deg);
+}
+
+.lines-reverse .line:nth-child(3) {
+    background-color: #D6BBFB;
+    top: calc(0% + 100px);
+    transform: rotate(15deg);
+}
+
+@media (max-width: 870px) {
+    .lines {
+        display: none;
+    }
+}
+
+.retry-handle {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.button-82-pushable {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-82-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition:
+        transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-82-edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(to left,
+            hsl(340deg 100% 16%) 0%,
+            hsl(340deg 100% 32%) 8%,
+            hsl(340deg 100% 32%) 92%,
+            hsl(340deg 100% 16%) 100%);
+}
+
+.button-82-front {
+    display: block;
+    position: relative;
+    padding: 12px 27px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: white;
+    background: hsl(345deg 100% 47%);
+    will-change: transform;
+    transform: translateY(-4px);
+    transition:
+        transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+    .button-82-front {
+        font-size: 1.25rem;
+        padding: 12px 42px;
+    }
+}
+
+.button-82-pushable:hover {
+    filter: brightness(110%);
+    -webkit-filter: brightness(110%);
+}
+
+.button-82-pushable:hover .button-82-front {
+    transform: translateY(-6px);
+    transition:
+        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+    transform: translateY(4px);
+    transition:
+        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+    outline: none;
+}
+.no-posts-message{
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url('https://i.imgur.com/Z8q7ww7.png');
+}
